@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Courgette&display=swap');
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: 0;
+}
+
+body{
+     font-family: 'Courgette',cursive;
+     background: #333;
+     color: #fff;
+     line-height: 1.6;
+}
+
+.slider{
+     position: relative;
+     overflow: hidden;
+     width: 100vw;
+     height: 100vh;
+}
+
+.slide{
+     position: absolute;
+     top: 0;
+     left: 0;
+     opacity: 0;
+     width: 100%;
+     height: 100%;
+     transition: all 0.4s ease-in-out;
+}
+
+.slide.current{
+     opacity: 1;
+}
+
+.slide .content{
+     width: 450px;
+     position: absolute;
+     bottom: 40px;
+     left: -500px;
+     opacity: 0;
+     padding: 20px;
+     background: rgba(0, 0, 0, 0.6);
+}
+
+.slide.current .content{
+     opacity: 1;
+     transform: translateX(500px);
+     transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons #prev{
+     position: absolute;
+     top: 50%;
+     left: 10px;
+     z-index: 2;
+}
+
+.buttons #next{
+     position: absolute;
+     top: 50%;
+     right: 10px;
+} 
+
+
+.buttons button {
+     border: 2px solid #fff;
+     background-color: transparent;
+     color: #fff;
+     font-size: 20px;
+     cursor: pointer;
+     padding: 7px 10px;
+     border-radius: 50%;
+}
+
+.buttons button:hover {
+     background-color: #fff;
+     color: #333;
+   }
+   
+   @media (max-width: 500px) {
+     .slide .content {
+       bottom: -300px;
+       left: 0;
+       width: 100%;
+     }
+   
+     .slide.current .content {
+       transform: translateY(-300px);
+     }
+   }
+   
+
+.slide:nth-child(1){
+     background: url(http://www.picsum.photos/id/47/1920/1260) no-repeat center center / cover;
+}
+.slide:nth-child(2){
+     background: url(http://www.picsum.photos/id/74/1920/1260) no-repeat center center / cover;
+}
+.slide:nth-child(3){
+     background: url(http://www.picsum.photos/id/294/1920/1260) no-repeat center center / cover;
+}
+.slide:nth-child(4){
+     background: url(http://www.picsum.photos/id/921/1920/1260) no-repeat center center / cover;
+}
+.slide:nth-child(5){
+     background: url(http://www.picsum.photos/id/654/1920/1260) no-repeat center center / cover;
+}
+.slide:nth-child(6){
+     background: url(http://www.picsum.photos/id/805/1920/1260) no-repeat center center / cover;
+}
+.slide:nth-child(7){
+     background: url(http://www.picsum.photos/id/167/1920/1260) no-repeat center center / cover;
+}
+.slide:nth-child(8){
+     background: url(http://www.picsum.photos/id/586/1920/1260) no-repeat center center / cover;
+}
+.slide:nth-child(9){
+     background: url(http://www.picsum.photos/id/492/1920/1260) no-repeat center center / cover;
+}
+.slide:nth-child(10){
+     background: url(http://www.picsum.photos/id/845/1920/1260) no-repeat center center / cover;
+}
